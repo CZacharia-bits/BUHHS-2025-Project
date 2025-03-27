@@ -21,7 +21,7 @@ def organize_dataset():
     print("Organizing dataset into training and validation sets...")
     
     # Extracting the dataset if needed
-    if not os.path.exists('(path to the trashnet files)/trashnet-master/data/dataset-resized'):
+    if not os.path.exists('(path to the trashnet file)/trashnet-master/data/dataset-resized'):
         print("Categories not found, extracting dataset first...")
         extract_dataset()
     
