@@ -9,8 +9,8 @@ import numpy as np
 from PIL import Image
 
 def extract_dataset():
-    zip_path = '/Users/christos/Downloads/trashnet-master/data/dataset-resized.zip'
-    extract_path = '/Users/christos/Downloads/trashnet-master/data'
+    zip_path = '(Path to the trshnet file)trashnet-master/data/dataset-resized.zip'
+    extract_path = '(path to the trashnet file)/trashnet-master/data'
     
     print("Extracting dataset-resized.zip...")
     with zipfile.ZipFile(zip_path, 'r') as zip_ref:
@@ -21,12 +21,12 @@ def organize_dataset():
     print("Organizing dataset into training and validation sets...")
     
     # Extracting the dataset if needed
-    if not os.path.exists('/Users/christos/Downloads/trashnet-master/data/dataset-resized'):
+    if not os.path.exists('(path to the trashnet files)/trashnet-master/data/dataset-resized'):
         print("Categories not found, extracting dataset first...")
         extract_dataset()
     
     # Use the path to the dataset-resized folder
-    source_dir = '/Users/christos/Downloads/trashnet-master/data/dataset-resized'
+    source_dir = '(path to the trashnet files)/trashnet-master/data/dataset-resized'
     
     if not os.path.exists(source_dir):
         print(f"Error: {source_dir} directory not found!")
