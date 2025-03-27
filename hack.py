@@ -9,7 +9,7 @@ import numpy as np
 from PIL import Image
 
 def extract_dataset():
-    zip_path = '(Path to the trshnet file)trashnet-master/data/dataset-resized.zip'
+    zip_path = '(Path to the trashnet file)trashnet-master/data/dataset-resized.zip'
     extract_path = '(path to the trashnet file)/trashnet-master/data'
     
     print("Extracting dataset-resized.zip...")
