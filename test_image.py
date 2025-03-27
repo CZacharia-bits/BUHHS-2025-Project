@@ -17,5 +17,5 @@ def test_new_image(image_path):
 
 if __name__ == "__main__":
     # Ask user for image path
-    image_path = input("Enter the path to your image (e.g., /Users/user/Downloads/bottle.jpg): ")
+    image_path = input("Enter the path to your image (e.g., path to your image: ")
     test_new_image(image_path)
